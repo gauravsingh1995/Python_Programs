@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[1]:
-
 import webbrowser
 import time 
 total_breaks=3
@@ -13,9 +9,6 @@ while(break_count<total_breaks):
     webbrowser.open("https://www.youtube.com/watch?v=9GZc8r-JNBA")
     break_count=break_count + 1
     
-
-
-# In[ ]:
 
 
 
