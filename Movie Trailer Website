@@ -1,7 +1,4 @@
 
-# coding: utf-8
-
-# In[2]:
 
 import webbrowser
 class movie():
@@ -13,10 +10,6 @@ class movie():
         self.trailer_youtube_url = trailer_youtube
     def showtrailer(self):
         webbrowser.open_new_tab(self.trailer)
- 
-
-
-# In[6]:
 
 toy_story = movie("Toy Story",
                   "Toy Story is about the 'secret life of toys' when people are not around. When Buzz Lightyear, a space-ranger, takes Woody's place as Andy's favorite toy, Woody doesn't like the situation and gets into a fight with Buzz",
@@ -28,13 +21,9 @@ gladiator = movie( " Gladiator", " Gladiator is a 2000 British-American epic his
 pursuitofhappyness = movie("The Pursuit of Happyness", "The Pursuit of Happyness is a 2006 American biographical drama film based on entrepreneur Chris Gardner's nearly one-year struggle being homeless. ", "https://upload.wikimedia.org/wikipedia/en/8/81/Poster-pursuithappyness.jpg", "https://www.youtube.com/watch?v=doLdmYhpNyc")
 shawshankredemption = movie("The Shawshank Redemption", "The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, and starring Tim Robbins and Morgan Freeman.", "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg", " https://www.youtube.com/watch?v=zdWZBvd0-pg")
 
-
-# In[9]:
-
 import webbrowser
 import os
 import re
-
 
 # Styles and scripting for the page
 main_page_head = '''
@@ -117,7 +106,6 @@ main_page_head = '''
 </head>
 '''
 
-
 # The main page layout and title bar
 main_page_content = '''
   <body>
@@ -158,8 +146,6 @@ movie_tile_content = '''
     <h2>{movie_title}</h2>
 </div>
 '''
-
-
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
     content = ''
@@ -198,13 +184,10 @@ def open_movies_page(movies):
     webbrowser.open('file://' + url, new=2)
 
 
-# In[8]:
-
 movies = [toy_story, avatar, beautiful_mind, gladiator,pursuitofhappyness,shawshankredemption]
 open_movies_page(movies)
 
 
-# In[ ]:
 
 
 
