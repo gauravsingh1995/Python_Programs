@@ -1,0 +1,18 @@
+def charFeq(s):
+    f = s[::-1]
+    p = f.lower()
+    g = list(p)
+    a = "abcdefghijklmnopqstruvwxyz"
+    h = list(a)       
+    k=[]
+    l=[]
+    i=0
+    while(i <len(a)):       
+        j =g.count(h[i])
+        k.append(h[i])
+        l.append(j)
+        i=i+1
+    o = dict(zip(k, l))
+    return o
+p=charFeq("The quick brown fox jumps over the lazy dog")
+print(p)
