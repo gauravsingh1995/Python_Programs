@@ -1,0 +1,26 @@
+import turtle
+def drawsquare():  
+    ts = turtle.getscreen()
+    ts.bgcolor("red")
+    brad = turtle.Turtle()
+    i=0
+    while (i<50):
+        brad.left(20)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.left(30)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        i-i+1
+    ts.exitonclick  
+drawsquare()
