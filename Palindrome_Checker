@@ -1,0 +1,9 @@
+def palindrome(s):
+    j = "".join(s.split())
+    f = j[::-1]
+    g=j.lower()
+    h=f.lower()
+    if(g==h):
+        print(s,"is a Palindrome.")
+    else:
+        print(s,"is not a Palindrome.")
